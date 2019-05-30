@@ -1,0 +1,20 @@
+{
+	"name": "Nantes-Sous-Pression",
+	"version": "1.0.0",
+	"description": "Nantes Sous Pression",
+	"repository": "https://github.com/nantesbeerclub/nantes-sous-pression-landing.git",
+	"license": "MIT",
+	"devDependencies": {
+		"browser-sync": "^2.26.3",
+		"gulp": "^4.0.2",
+		"gulp-cli": "^2.2.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-util": "^3.0.8",
+		"sass-font-face": "^1.0.1",
+		"sass-mq": "^5.0.0",
+		"vinyl-ftp": "^0.6.1"
+	},
+	"scripts": {
+		"start": "gulp watch"
+	}
+}

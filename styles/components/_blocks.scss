@@ -114,6 +114,10 @@ body {
 			width: 100%;
 			padding-left: 50px;
 			order: 3;
+
+			a {
+				display: inline !important;
+			}
 		}
 
 		p {
@@ -135,7 +139,7 @@ body {
 		}
 
 		img {
-			display: block;
+			// display: block;
 			margin-top: 30px;
 			margin-left: 10px;
 			margin-right: 10px;
@@ -148,6 +152,50 @@ body {
 				margin-right: 10px;
 			}
 		}
+
+		.facebook,
+		.instagram {
+				.show-hover {
+					display: none;
+				}
+
+				a {
+					display: block;
+				    height: 64.66px;
+				    width: 64.66px;
+				    margin-left: 10px;
+					margin-right: 10px;
+				}
+
+					&:hover {
+						.show-hover {
+							display: block;
+							height: 64.66px;
+						    width: 64.66px;
+						}
+
+						.hide-hover {
+							display: none;
+						}
+					}
+		}
+
+		.facebook {
+			.show-facebook {
+				display: none;
+			}
+
+			&:hover {
+				.show-facebook {
+					display: block;
+				}
+
+				.hide-facebook {
+					display: none;
+				}
+			}
+		}
+
 	}
 
 	.final {
@@ -215,12 +263,32 @@ body {
 	    align-self: flex-start;
 	    height: 55px;
 
+	    .show-hover {
+	    	display: none;
+	    }
+
+	    &:hover {
+			border-color: $peach;
+
+			.hide-hover {
+				display: none;
+			}
+
+			.show-hover {
+				display: block;
+			}
+
+			span {
+				color: $peach;
+			}
+		}
+
 	    @media (max-width: 1160px) {	
 		    margin-left: auto;
 		    margin-right: auto;
 		    width: 100% !important;
 		    justify-content: space-around;
-		    padding: 1.5rem;
+		    padding: 2.5rem;
 
 		    img:nth-child(1) {
 		    	width: 150px;

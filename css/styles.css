@@ -117,7 +117,9 @@ body {
         max-width: 100%;
         width: 100%;
         padding-left: 50px;
-        order: 3; } }
+        order: 3; }
+        .second-part .social-media a {
+          display: inline !important; } }
     .second-part .social-media p {
       font-size: 1.5rem;
       text-align: center;
@@ -134,7 +136,6 @@ body {
           width: 100%;
           line-height: normal; } }
     .second-part .social-media img {
-      display: block;
       margin-top: 30px;
       margin-left: 10px;
       margin-right: 10px; }
@@ -143,6 +144,30 @@ body {
           width: 100px; } }
       .second-part .social-media img:nth-child(1) {
         margin-right: 10px; }
+    .second-part .social-media .facebook .show-hover,
+    .second-part .social-media .instagram .show-hover {
+      display: none; }
+    .second-part .social-media .facebook a,
+    .second-part .social-media .instagram a {
+      display: block;
+      height: 64.66px;
+      width: 64.66px;
+      margin-left: 10px;
+      margin-right: 10px; }
+    .second-part .social-media .facebook:hover .show-hover,
+    .second-part .social-media .instagram:hover .show-hover {
+      display: block;
+      height: 64.66px;
+      width: 64.66px; }
+    .second-part .social-media .facebook:hover .hide-hover,
+    .second-part .social-media .instagram:hover .hide-hover {
+      display: none; }
+    .second-part .social-media .facebook .show-facebook {
+      display: none; }
+    .second-part .social-media .facebook:hover .show-facebook {
+      display: block; }
+    .second-part .social-media .facebook:hover .hide-facebook {
+      display: none; }
   .second-part .final {
     margin-top: 15px;
     width: 33%;
@@ -193,13 +218,23 @@ body {
     margin-top: 0 !important;
     align-self: flex-start;
     height: 55px; }
+    .second-part .nantesBeerClub .show-hover {
+      display: none; }
+    .second-part .nantesBeerClub:hover {
+      border-color: #F6AF95; }
+      .second-part .nantesBeerClub:hover .hide-hover {
+        display: none; }
+      .second-part .nantesBeerClub:hover .show-hover {
+        display: block; }
+      .second-part .nantesBeerClub:hover span {
+        color: #F6AF95; }
     @media (max-width: 1160px) {
       .second-part .nantesBeerClub {
         margin-left: auto;
         margin-right: auto;
         width: 100% !important;
         justify-content: space-around;
-        padding: 1.5rem; }
+        padding: 2.5rem; }
         .second-part .nantesBeerClub img:nth-child(1) {
           width: 150px; } }
     .second-part .nantesBeerClub span {
